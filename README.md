@@ -4,9 +4,13 @@
 
 > An open source project by a financial manager developed in HTML, CSS and Vanilla JavaScript.
 
+<br>
+
 ## **✔️ Goal**
 
 The objective of the project is to carry out a study of JavaScript, HTML and CSS without using any framework.
+
+<br>
 
 ## **🍷 Using**
 
@@ -22,12 +26,16 @@ Run the dev script to start the live-server:
 npm run dev
 ```
 
+<br>
+
 ## **💻 Techs**
 
   - [live-server](https://www.npmjs.com/package/live-server)
   - [commitlint](https://github.com/conventional-changelog/commitlint)
   - [husky](https://github.com/typicode/husky)
   - [editorconfig](https://editorconfig.org/)
+
+<br>
 
 ## **:star2: THANKS**
 
@@ -49,6 +57,8 @@ npm run dev
     </td>
   </tr>
 </table>
+
+<br>
 
 ## **📜 License**
 
