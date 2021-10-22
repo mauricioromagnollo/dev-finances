@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Checkout
-      - run: |
+        run: |
           mv ./public/* .
           rm README.md LICENSE *.js *.json
           rm -rf ./public
