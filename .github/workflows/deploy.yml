@@ -14,15 +14,15 @@ jobs:
       - name: Checkout to branch gh-pages
         run: git checkout gh-pages
       - name: Extracting files from the public directory and clean
-          run: git checkout gh-pages
-          run: mv ./public/* .
-          run: rm README.md LICENSE *.js *.json
-          run: rm -rf ./public
-          run: rm -rf ./scripts
-          run: rm -rf ./.github
-          run: git add .
-          run: git commit -m "Deploy"
-          run: git push && git checkout master
+        run: git checkout gh-pages
+        run: mv ./public/* .
+        run: rm README.md LICENSE *.js *.json
+        run: rm -rf ./public
+        run: rm -rf ./scripts
+        run: rm -rf ./.github
+        run: git add .
+        run: git commit -m "Deploy"
+        run: git push && git checkout master
       - name: Add modifications
         run: git add -A
       - name: Commit deploy message
