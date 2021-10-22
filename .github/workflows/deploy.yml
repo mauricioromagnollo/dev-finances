@@ -11,12 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout to branch gh-pages
-        run: git checkout gh-pages
-      - name: Extracting files from the public directory
-        run: mv ./public/* .
-      - name: Commit deploy message
-        run: git commit -m "Deploy"
-      - name: Push and Deploy 🚀
-        run: git push && git checkout master
-
+      - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@3.7.1
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: out
