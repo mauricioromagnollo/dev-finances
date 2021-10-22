@@ -13,6 +13,3 @@ jobs:
     steps:
       - name: Running deploy script
         run: bash deploy.sh
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
