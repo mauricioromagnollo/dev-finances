@@ -11,7 +11,8 @@
     }
   },
   "scripts": {
-    "dev": "live-server --browser=google-chrome-stable src/"
+    "dev": "live-server --browser=google-chrome-stable src/",
+    "deploy": "bash deploy.sh"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
