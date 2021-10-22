@@ -9,7 +9,5 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Running deploy script
-        run: bash deploy.sh
+      - run: bash deploy.sh
