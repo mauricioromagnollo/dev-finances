@@ -11,8 +11,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Deploy
+      - name: Checkout to branch gh-pages
+        run: git checkout gh-pages
+      - name: Extracting files from the public directory
+        run: mv ./public/* .
+      - name: Commit deploy message
+        run: git commit -m "Deploy"
+      - name: Push and checkout to master
+        run: git push && git checkout master
+      - name: Push and Deploy 🚀
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: .
