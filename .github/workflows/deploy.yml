@@ -10,4 +10,4 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: bash deploy.sh
+      - run: bash ./deploy.sh
