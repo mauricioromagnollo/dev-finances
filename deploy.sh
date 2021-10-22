@@ -2,6 +2,7 @@
 
 chmod +x deploy.sh
 
+git checkout gh-pages
 mv ./public/* .
 rm README.md LICENSE *.js *.json
 rm -rf ./public
